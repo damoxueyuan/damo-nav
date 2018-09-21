@@ -1,0 +1,29 @@
+.header-box {
+
+}
+header .nav a.active {
+    border-color: #459df5;
+    color: #459df5;
+}
+.d-yellow {
+  color: #f8bc05 !important;
+}
+
+.d-red {
+  color: #ea4335 !important;
+}
+
+.d-blue {
+  color: #4285f4 !important;
+}
+
+.d-green {
+  color: #34ab53 !important;
+}
+@media (min-width: 992px)
+{
+    header .logo img {
+      width: 30px;
+      vertical-align: -5px;
+    }
+}

@@ -1,0 +1,41 @@
+.biji {
+
+}
+.img-wh{
+    /* height: 230px; */
+    height: 160px;
+    width: 100%;
+}
+.img-box {
+    /* height: 230px; */
+    height: 160px;
+    width: 100%;
+    color:#fff;
+    font-size:32px;
+    line-height: 160px;
+    text-align: center;
+}
+
+.d-yellow {
+    color: #f8bc05;
+}
+
+.d-red {
+    color: #ea4335;
+}
+
+.d-blue {
+    color: #4285f4;
+}
+
+.d-green {
+    color: #34ab53;
+}
+
+@media (min-width: 992px) {
+    .main .banner {
+    height: 330px;
+    margin-top: 10px;
+    padding: 30px 50px;
+    }
+}

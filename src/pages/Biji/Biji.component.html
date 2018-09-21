@@ -1,0 +1,66 @@
+<div id="main" class="main" v-lazy-container="{ selector: 'img' }">
+  <div class="container mainContent bg2">
+    <!--内容banner-->
+    <div class="banner">
+      <!-- <h2>达魔笔记：扫地僧，一人一行一字敲出的笔记</h2>
+      <p>笔记从网络中来，回到网络中去，承载着扫地僧前端修炼学习之路.</p>
+      <p>为技术攻关精神点赞，内容覆盖：语法基础、VUE、Angular、React、小程序、算法、GIT等资源.</p>
+      <p>扫地僧：达魔笔记开山鼻祖，外号技术“百科全书”</p> -->
+    </div>
+    <div class="row list-box">
+      <div class="menu-list clearfix">
+        <div class="meun-list-tit hidden-xs"><i class="icon icon-th-list"></i>笔记数：21</div>
+        <ul class="nav nav-tabs" style="display: none;">
+          <!--判断当前页面是否为“教程资源”，若是则给“全部”分类标上“active”类名-->
+          <li class="active"><a href="/channels/2.html">全部</a></li>
+          <!--获取站点下所有的子目录-->
+
+          <!--判断当前当前栏目或上级栏目是否和本页面的栏目组名称一致，若是则给对应的栏目值标上“active”类名-->
+          <li><a href="/channels/29.html">HTML+CSS</a></li>
+
+          <!--判断当前当前栏目或上级栏目是否和本页面的栏目组名称一致，若是则给对应的栏目值标上“active”类名-->
+          <li><a href="/channels/30.html">JavaScript</a></li>
+
+          <!--判断当前当前栏目或上级栏目是否和本页面的栏目组名称一致，若是则给对应的栏目值标上“active”类名-->
+          <li><a href="/channels/152.html">全套教程</a></li>
+
+          <!--判断当前当前栏目或上级栏目是否和本页面的栏目组名称一致，若是则给对应的栏目值标上“active”类名-->
+          <li><a href="/channels/49.html">实战案例</a></li>
+
+          <!--判断当前当前栏目或上级栏目是否和本页面的栏目组名称一致，若是则给对应的栏目值标上“active”类名-->
+          <li><a href="/channels/425.html">C语言</a></li>
+
+        </ul>
+      </div>
+
+      <div class="col-md-4 col-sm-6" v-for="(item,index) in ghList" :key="index">
+        <a v-bind:href="item.href" class="card">
+          <img  v-if="item.hasImg" class="img-wh" data-src="'/static/images/gh/'+item.imgURL" style="display: block;">
+          <div  v-if="!item.hasImg"class="img-box" :style="{backgroundColor: item.bgColor}">{{item.title}}</div>
+          <div class="card-heading">
+            <strong><i class="icon icon-folder-open"></i>{{item.title}}</strong>
+            <span class="card-heading-des">{{item.lab1}}{{item.lab2}}</span>
+          </div>
+          <span class="label label-danger"></span>
+          <span class="label label-success"></span>
+        </a>
+      </div>
+
+      <!-- 编写一个没有背景图的 -->
+    <!-- <div class="col-md-4 col-sm-6" v-for="(item,index) in ghList" :key="index+100">
+      <a v-bind:href="item.href" class="card">
+        <div class="img-box" :style="{backgroundColor:getBgColor}">{{item.title}}</div>
+        <div class="card-heading">
+          <strong><i class="icon icon-folder-open"></i>{{item.title}}</strong>
+          <span class="card-heading-des">{{item.lab1}}{{item.lab2}}</span>
+        </div>
+        <span class="label label-danger"></span>
+        <span class="label label-success"></span>
+      </a>
+    </div> -->
+
+    <!-- 结束 -->
+    </div>
+  </div>
+
+</div>
